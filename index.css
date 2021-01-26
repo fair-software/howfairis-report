@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Franklin Gothic Condensed Web";
+    font-style: normal;
+    font-weight: 800;
+    src: url("franklingothic-condensed-webfont.woff2");
+}
+#badge {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+}
+#container {
+    background-color: #fff;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    max-width: 61.25rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+#title {
+    margin-left: 5rem;
+    padding-top: 10rem;
+}
+#title h1 {
+    font-family: "Franklin Gothic Condensed Web";
+    font-size: 2.5rem;
+}
+#footer {
+    height: 20rem;
+}
+body {
+    background-color: #2c2b2c;
+    color: rgb(44, 43, 44);
+    font-family: "Roboto Condensed";
+    font-size: 1.5rem;
+    line-height: 1.55;
+    margin: 0;
+}
+.hidden {
+    display: none;
+}
+.recommendation {
+    margin-left: 5rem;
+}
+.recommendation h2 {
+    font-family: "Franklin Gothic Condensed Web";
+    font-size: 2rem;
+    line-height: 1.55;
+}
+.compliant span.symbol {
+    color: #00D682;
+    font-size: 2.5rem;
+    line-height: 1.55;
+    margin-left: -5rem;
+    position: absolute;
+}
+.noncompliant span.symbol {
+    color: red;
+    font-size: 2.5rem;
+    line-height: 1.55;
+    margin-left: -5rem;
+    position: absolute;
+}
