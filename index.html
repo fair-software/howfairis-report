@@ -9,6 +9,10 @@
 
     <body>
 
+        <div id="badge">
+            <img src="" />
+        </div>
+
         <div id="repository">
             <div class="compliant hidden">
                 <h1>Use a publicly accessible repository with version control</h1>
@@ -94,11 +98,32 @@
                         return value;
                     }
                 }
-                return(false);
+                return "";
             }
 
-            const setVisibility = () => {
-                const compliance = getQueryVariable("compliance");
+            const getBadgeColor = (compliance) => {
+                const colors = ["red","red","orange","orange","yellow", "green"];
+                const count = compliance.filter((elem) => {return elem === "1"}).length;
+                return colors[count];
+            };
+
+            const getBadgeSymbols = (elem) => {
+                const symbol_compliant = "%E2%97%8F";
+                const symbol_noncompliant = "%E2%97%8B";
+                if (elem === "1") {
+                    return symbol_compliant;
+                }
+                return symbol_noncompliant;
+            };
+
+            const setBadge = (compliance) => {
+                const state = compliance.map(getBadgeSymbols).join("%20%20");
+                const color = getBadgeColor(compliance);
+                const src = "https:\/\/img.shields.io\/badge\/fair--software.eu-" + state + "-" + color;
+                document.getElementById("badge").getElementsByTagName("img")[0].src = src;
+            }
+
+            const setVisibility = (compliance) => {
                 const recommendations = ["repository", "license", "registry", "citation", "checklist"];
                 
                 for (const [i, recommendation] of recommendations.entries()) {
@@ -116,7 +141,9 @@
                 }
             }
 
-            setVisibility()
+            const compliance = (getQueryVariable("compliance") + "00000").split("").slice(0, 5);
+            setBadge(compliance)
+            setVisibility(compliance)
 
         </script>
 
