@@ -1,90 +1,250 @@
 <html>
     <head>
         <style>
+
+            @font-face {
+                font-family: "Franklin Gothic Condensed Web";
+                font-style: normal;
+                font-weight: 800;
+                src: url("franklingothic-condensed-webfont.woff2");
+            }
+            #badge {
+                margin-top: 1rem;
+                margin-bottom: 5rem;
+                margin-left: 5rem;
+            }
+            #container {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 61.25rem;
+            }
+            #title {
+                margin-left: 5rem;
+                margin-top: 10rem;
+            }
+            #title h1 {
+                font-family: "Franklin Gothic Condensed Web";
+                font-size: 2.5rem;
+            }
+            body {
+                font-family: "Roboto Condensed";
+                font-size: 1.5rem;
+                line-height: 1.55;
+                color: rgb(44, 43, 44);
+            }
             .hidden {
                 display: none;
             }
+            .recommendation {
+                margin-left: 5rem;
+            }
+            .recommendation h2 {
+                font-family: "Franklin Gothic Condensed Web";
+                font-size: 2rem;
+                line-height: 1.55;
+            }
+            .compliant span.symbol {
+                color: #00D682;
+                font-size: 2.5rem;
+                line-height: 1.55;
+                margin-left: -5rem;
+                position: absolute;
+            }
+            .noncompliant span.symbol {
+                color: red;
+                font-size: 2.5rem;
+                line-height: 1.55;
+                margin-left: -5rem;
+                position: absolute;
+            }
         </style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700">
     </head>
 
     <body>
+        <div id="container">
 
-        <div id="badge">
-            <img src="" />
-        </div>
+            <div id="title">
+                <h1>Status report</h1>
+            </div>
 
-        <div id="repository">
-            <div class="compliant hidden">
-                <h1>Use a publicly accessible repository with version control</h1>
-                <p>
-                Well done
-                </p>
+            <div id="badge">
+                <img src="" />
             </div>
-            <div class="noncompliant">
-                <h1>Use a publicly accessible repository with version control</h1>
-                <p>
-                Here's what to do about it
-                </p>
-            </div>
-        </div>
 
-        <div id="license">
-            <div class="compliant hidden">
-                <h1>Add a license</h1>
-                <p>
-                Well done
-                </p>
+            <div id="repository" class="recommendation">
+                <div class="compliant hidden">
+                    <span class="symbol">&#x2611;</span>
+                    <h2>Use a publicly accessible repository with version control</h2>
+                    <p>
+                    Well done.
+                    </p>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in enim lobortis diam vehicula ultricies. Phasellus ornare purus nec dolor dapibus, ut eleifend erat aliquet. Duis facilisis dolor non erat semper pellentesque. Sed gravida non libero vitae tincidunt. In consequat sed ex at interdum. Proin mattis eu felis sed euismod. Nunc lacinia posuere mattis.
+                    </p>
+                    <p>
+                    Aenean quam est, egestas in sagittis in, hendrerit vel justo. Sed metus libero, auctor tincidunt metus eget, suscipit dignissim libero. Aenean non vehicula ante. Duis varius dictum ante vel feugiat. Donec non hendrerit orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum maximus justo a odio vestibulum, sit amet fringilla orci pharetra.
+                    </p>
+                    <p>
+                    Vestibulum posuere a ex vitae egestas. Nulla ac risus vehicula, pulvinar eros non, viverra nunc. Suspendisse sit amet ex lectus. Praesent vulputate elit vitae tincidunt condimentum. Integer at felis eget massa lacinia maximus vitae eu nulla. In in ex et odio feugiat convallis eu sit amet tortor. Ut et maximus libero. 
+                    </p>
+                </div>
+                <div class="noncompliant">
+                    <span class="symbol">&#x2612;</span>
+                    <h2>Use a publicly accessible repository with version control</h2>
+                    <p>
+                    Here's what to do about it
+                    </p>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in enim lobortis diam vehicula ultricies. Phasellus ornare purus nec dolor dapibus, ut eleifend erat aliquet. Duis facilisis dolor non erat semper pellentesque. Sed gravida non libero vitae tincidunt. In consequat sed ex at interdum. Proin mattis eu felis sed euismod. Nunc lacinia posuere mattis.
+                    </p>
+                    <p>
+                    Aenean quam est, egestas in sagittis in, hendrerit vel justo. Sed metus libero, auctor tincidunt metus eget, suscipit dignissim libero. Aenean non vehicula ante. Duis varius dictum ante vel feugiat. Donec non hendrerit orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum maximus justo a odio vestibulum, sit amet fringilla orci pharetra.
+                    </p>
+                    <p>
+                    Vestibulum posuere a ex vitae egestas. Nulla ac risus vehicula, pulvinar eros non, viverra nunc. Suspendisse sit amet ex lectus. Praesent vulputate elit vitae tincidunt condimentum. Integer at felis eget massa lacinia maximus vitae eu nulla. In in ex et odio feugiat convallis eu sit amet tortor. Ut et maximus libero. 
+                    </p>
+                </div>
             </div>
-            <div class="noncompliant">
-                <h1>Add a license</h1>
-                <p>
-                Here's what to do about it
-                </p>
-            </div>
-        </div>
 
-        <div id="registry">
-            <div class="compliant hidden">
-                <h1>Register your code in a community registry</h1>
-                <p>
-                Well done
-                </p>
+            <div id="license" class="recommendation">
+                <div class="compliant hidden">
+                    <span class="symbol">&#x2611;</span>
+                    <h2>Add a license</h2>
+                    <p>
+                    Well done.
+                    </p>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in enim lobortis diam vehicula ultricies. Phasellus ornare purus nec dolor dapibus, ut eleifend erat aliquet. Duis facilisis dolor non erat semper pellentesque. Sed gravida non libero vitae tincidunt. In consequat sed ex at interdum. Proin mattis eu felis sed euismod. Nunc lacinia posuere mattis.
+                    </p>
+                    <p>
+                    Aenean quam est, egestas in sagittis in, hendrerit vel justo. Sed metus libero, auctor tincidunt metus eget, suscipit dignissim libero. Aenean non vehicula ante. Duis varius dictum ante vel feugiat. Donec non hendrerit orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum maximus justo a odio vestibulum, sit amet fringilla orci pharetra.
+                    </p>
+                    <p>
+                    Vestibulum posuere a ex vitae egestas. Nulla ac risus vehicula, pulvinar eros non, viverra nunc. Suspendisse sit amet ex lectus. Praesent vulputate elit vitae tincidunt condimentum. Integer at felis eget massa lacinia maximus vitae eu nulla. In in ex et odio feugiat convallis eu sit amet tortor. Ut et maximus libero. 
+                    </p>
+                </div>
+                <div class="noncompliant">
+                    <span class="symbol">&#x2612;</span>
+                    <h2>Add a license</h2>
+                    <p>
+                    Here's what to do about it
+                    </p>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in enim lobortis diam vehicula ultricies. Phasellus ornare purus nec dolor dapibus, ut eleifend erat aliquet. Duis facilisis dolor non erat semper pellentesque. Sed gravida non libero vitae tincidunt. In consequat sed ex at interdum. Proin mattis eu felis sed euismod. Nunc lacinia posuere mattis.
+                    </p>
+                    <p>
+                    Aenean quam est, egestas in sagittis in, hendrerit vel justo. Sed metus libero, auctor tincidunt metus eget, suscipit dignissim libero. Aenean non vehicula ante. Duis varius dictum ante vel feugiat. Donec non hendrerit orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum maximus justo a odio vestibulum, sit amet fringilla orci pharetra.
+                    </p>
+                    <p>
+                    Vestibulum posuere a ex vitae egestas. Nulla ac risus vehicula, pulvinar eros non, viverra nunc. Suspendisse sit amet ex lectus. Praesent vulputate elit vitae tincidunt condimentum. Integer at felis eget massa lacinia maximus vitae eu nulla. In in ex et odio feugiat convallis eu sit amet tortor. Ut et maximus libero. 
+                    </p>
+                </div>
             </div>
-            <div class="noncompliant">
-                <h1>Register your code in a community registry</h1>
-                <p>
-                Here's what to do about it
-                </p>
-            </div>
-        </div>
 
-        <div id="citation">
-            <div class="compliant hidden">
-                <h1>Enable citation of the software</h1>
-                <p>
-                Well done
-                </p>
+            <div id="registry" class="recommendation">
+                <div class="compliant hidden">
+                    <span class="symbol">&#x2611;</span>
+                    <h2>Register your code in a community registry</h2>
+                    <p>
+                    Well done.
+                    </p>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in enim lobortis diam vehicula ultricies. Phasellus ornare purus nec dolor dapibus, ut eleifend erat aliquet. Duis facilisis dolor non erat semper pellentesque. Sed gravida non libero vitae tincidunt. In consequat sed ex at interdum. Proin mattis eu felis sed euismod. Nunc lacinia posuere mattis.
+                    </p>
+                    <p>
+                    Aenean quam est, egestas in sagittis in, hendrerit vel justo. Sed metus libero, auctor tincidunt metus eget, suscipit dignissim libero. Aenean non vehicula ante. Duis varius dictum ante vel feugiat. Donec non hendrerit orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum maximus justo a odio vestibulum, sit amet fringilla orci pharetra.
+                    </p>
+                    <p>
+                    Vestibulum posuere a ex vitae egestas. Nulla ac risus vehicula, pulvinar eros non, viverra nunc. Suspendisse sit amet ex lectus. Praesent vulputate elit vitae tincidunt condimentum. Integer at felis eget massa lacinia maximus vitae eu nulla. In in ex et odio feugiat convallis eu sit amet tortor. Ut et maximus libero. 
+                    </p>
+                </div>
+                <div class="noncompliant">
+                    <span class="symbol">&#x2612;</span>
+                    <h2>Register your code in a community registry</h2>
+                    <p>
+                    Here's what to do about it
+                    </p>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in enim lobortis diam vehicula ultricies. Phasellus ornare purus nec dolor dapibus, ut eleifend erat aliquet. Duis facilisis dolor non erat semper pellentesque. Sed gravida non libero vitae tincidunt. In consequat sed ex at interdum. Proin mattis eu felis sed euismod. Nunc lacinia posuere mattis.
+                    </p>
+                    <p>
+                    Aenean quam est, egestas in sagittis in, hendrerit vel justo. Sed metus libero, auctor tincidunt metus eget, suscipit dignissim libero. Aenean non vehicula ante. Duis varius dictum ante vel feugiat. Donec non hendrerit orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum maximus justo a odio vestibulum, sit amet fringilla orci pharetra.
+                    </p>
+                    <p>
+                    Vestibulum posuere a ex vitae egestas. Nulla ac risus vehicula, pulvinar eros non, viverra nunc. Suspendisse sit amet ex lectus. Praesent vulputate elit vitae tincidunt condimentum. Integer at felis eget massa lacinia maximus vitae eu nulla. In in ex et odio feugiat convallis eu sit amet tortor. Ut et maximus libero. 
+                    </p>
+                </div>
             </div>
-            <div class="noncompliant">
-                <h1>Enable citation of the software</h1>
-                <p>
-                Here's what to do about it
-                </p>
-            </div>
-        </div>
 
-        <div id="checklist">
-            <div class="compliant hidden">
-                <h1>Use a software quality checklist</h1>
-                <p>
-                Well done
-                </p>
+            <div id="citation" class="recommendation">
+                <div class="compliant hidden">
+                    <span class="symbol">&#x2611;</span>
+                    <h2>Enable citation of the software</h2>
+                    <p>
+                    Well done.
+                    </p>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in enim lobortis diam vehicula ultricies. Phasellus ornare purus nec dolor dapibus, ut eleifend erat aliquet. Duis facilisis dolor non erat semper pellentesque. Sed gravida non libero vitae tincidunt. In consequat sed ex at interdum. Proin mattis eu felis sed euismod. Nunc lacinia posuere mattis.
+                    </p>
+                    <p>
+                    Aenean quam est, egestas in sagittis in, hendrerit vel justo. Sed metus libero, auctor tincidunt metus eget, suscipit dignissim libero. Aenean non vehicula ante. Duis varius dictum ante vel feugiat. Donec non hendrerit orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum maximus justo a odio vestibulum, sit amet fringilla orci pharetra.
+                    </p>
+                    <p>
+                    Vestibulum posuere a ex vitae egestas. Nulla ac risus vehicula, pulvinar eros non, viverra nunc. Suspendisse sit amet ex lectus. Praesent vulputate elit vitae tincidunt condimentum. Integer at felis eget massa lacinia maximus vitae eu nulla. In in ex et odio feugiat convallis eu sit amet tortor. Ut et maximus libero. 
+                    </p>
+                </div>
+                <div class="noncompliant">
+                    <span class="symbol">&#x2612;</span>
+                    <h2>Enable citation of the software</h2>
+                    <p>
+                    Here's what to do about it
+                    </p>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in enim lobortis diam vehicula ultricies. Phasellus ornare purus nec dolor dapibus, ut eleifend erat aliquet. Duis facilisis dolor non erat semper pellentesque. Sed gravida non libero vitae tincidunt. In consequat sed ex at interdum. Proin mattis eu felis sed euismod. Nunc lacinia posuere mattis.
+                    </p>
+                    <p>
+                    Aenean quam est, egestas in sagittis in, hendrerit vel justo. Sed metus libero, auctor tincidunt metus eget, suscipit dignissim libero. Aenean non vehicula ante. Duis varius dictum ante vel feugiat. Donec non hendrerit orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum maximus justo a odio vestibulum, sit amet fringilla orci pharetra.
+                    </p>
+                    <p>
+                    Vestibulum posuere a ex vitae egestas. Nulla ac risus vehicula, pulvinar eros non, viverra nunc. Suspendisse sit amet ex lectus. Praesent vulputate elit vitae tincidunt condimentum. Integer at felis eget massa lacinia maximus vitae eu nulla. In in ex et odio feugiat convallis eu sit amet tortor. Ut et maximus libero. 
+                    </p>
+                </div>
             </div>
-            <div class="noncompliant">
-                <h1>Use a software quality checklist</h1>
-                <p>
-                Here's what to do about it
-                </p>
+
+            <div id="checklist" class="recommendation">
+                <div class="compliant hidden">
+                    <span class="symbol">&#x2611;</span>
+                    <h2>Use a software quality checklist</h2>
+                    <p>
+                    Well done.
+                    </p>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in enim lobortis diam vehicula ultricies. Phasellus ornare purus nec dolor dapibus, ut eleifend erat aliquet. Duis facilisis dolor non erat semper pellentesque. Sed gravida non libero vitae tincidunt. In consequat sed ex at interdum. Proin mattis eu felis sed euismod. Nunc lacinia posuere mattis.
+                    </p>
+                    <p>
+                    Aenean quam est, egestas in sagittis in, hendrerit vel justo. Sed metus libero, auctor tincidunt metus eget, suscipit dignissim libero. Aenean non vehicula ante. Duis varius dictum ante vel feugiat. Donec non hendrerit orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum maximus justo a odio vestibulum, sit amet fringilla orci pharetra.
+                    </p>
+                    <p>
+                    Vestibulum posuere a ex vitae egestas. Nulla ac risus vehicula, pulvinar eros non, viverra nunc. Suspendisse sit amet ex lectus. Praesent vulputate elit vitae tincidunt condimentum. Integer at felis eget massa lacinia maximus vitae eu nulla. In in ex et odio feugiat convallis eu sit amet tortor. Ut et maximus libero. 
+                    </p>
+                </div>
+                <div class="noncompliant">
+                    <span class="symbol">&#x2612;</span>
+                    <h2>Use a software quality checklist</h2>
+                    <p>
+                    Here's what to do about it
+                    </p>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in enim lobortis diam vehicula ultricies. Phasellus ornare purus nec dolor dapibus, ut eleifend erat aliquet. Duis facilisis dolor non erat semper pellentesque. Sed gravida non libero vitae tincidunt. In consequat sed ex at interdum. Proin mattis eu felis sed euismod. Nunc lacinia posuere mattis.
+                    </p>
+                    <p>
+                    Aenean quam est, egestas in sagittis in, hendrerit vel justo. Sed metus libero, auctor tincidunt metus eget, suscipit dignissim libero. Aenean non vehicula ante. Duis varius dictum ante vel feugiat. Donec non hendrerit orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum maximus justo a odio vestibulum, sit amet fringilla orci pharetra.
+                    </p>
+                    <p>
+                    Vestibulum posuere a ex vitae egestas. Nulla ac risus vehicula, pulvinar eros non, viverra nunc. Suspendisse sit amet ex lectus. Praesent vulputate elit vitae tincidunt condimentum. Integer at felis eget massa lacinia maximus vitae eu nulla. In in ex et odio feugiat convallis eu sit amet tortor. Ut et maximus libero. 
+                    </p>
+                </div>
             </div>
         </div>
 
