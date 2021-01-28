@@ -45,24 +45,48 @@ body {
 .recommendation {
     margin-left: 5rem;
     margin-right: 5rem;
+    margin-bottom: 3rem;
     text-align: justify;
 }
 .recommendation h2 {
     font-family: "Franklin Gothic Condensed Web";
     font-size: 2rem;
     line-height: 1.55;
+    margin: 0;
+    padding-bottom: 0.4em;
+    padding-top: 1.3em;
+    text-align: left;
+}
+.recommendation h3 {
+    font-family: "Franklin Gothic Condensed Web";
+    font-size: 1.3rem;
+    line-height: 1.6em;
+    margin: 0;
+    padding-bottom: 0.3em;
+    padding-top: 1.1em;
+    text-align: left;
+    text-transform: uppercase;
+}
+.recommendation p {
+    margin: 0;
+    padding-bottom: 0.2em;
+    padding-top: 0;
 }
 .compliant span.symbol {
     color: #00D682;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1.55;
     margin-left: -5rem;
+    padding-bottom: 0.4em;
+    padding-top: 1.3em;
     position: absolute;
 }
 .noncompliant span.symbol {
     color: red;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1.55;
     margin-left: -5rem;
+    padding-bottom: 0.4em;
+    padding-top: 1.3em;
     position: absolute;
 }
