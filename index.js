@@ -50,9 +50,18 @@ const setVisibility = (compliance) => {
     }
 }
 
+const addCompliments = () => {
+    const compliments = ["Good job! ", "Well done! ", "Great work! ", "Nice! "];
+    document.querySelectorAll("span.compliment").forEach((span) => {
+        const i = Math.floor(Math.random() * compliments.length);
+        span.innerText = compliments[i];
+    });
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const compliance = (getQueryVariable("compliance") + "00000").split("").slice(0, 5);
     setBadge(compliance)
     setVisibility(compliance)
+    addCompliments()
 })
 
