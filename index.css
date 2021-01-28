@@ -5,9 +5,10 @@
     src: url("franklingothic-condensed-webfont.woff2");
 }
 #badge {
-    margin-top: 1rem;
     margin-bottom: 5rem;
     margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 1rem;
 }
 #container {
     background-color: #fff;
@@ -43,6 +44,7 @@ body {
 }
 .recommendation {
     margin-left: 5rem;
+    margin-right: 5rem;
 }
 .recommendation h2 {
     font-family: "Franklin Gothic Condensed Web";
