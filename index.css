@@ -45,6 +45,7 @@ body {
 .recommendation {
     margin-left: 5rem;
     margin-right: 5rem;
+    text-align: justify;
 }
 .recommendation h2 {
     font-family: "Franklin Gothic Condensed Web";
