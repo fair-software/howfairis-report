@@ -10,6 +10,9 @@
     margin-right: 5rem;
     margin-top: 1rem;
 }
+#badge img {
+    height: 2rem;
+}
 #container {
     background-color: #fff;
     margin-bottom: 5rem;
